@@ -5,7 +5,7 @@ import {
   Length,
   IsString,
   ValidateIf,
-  ValidateBy
+  ValidateBy,
 } from "class-validator";
 export class Post {
   constructor(title: string, text: string) {
@@ -32,5 +32,5 @@ validate(post).then((errors) => {
 });
 
 validateOrReject(post).catch((errors) => {
-  console.log("Promise rejected (validation failed). Errors: ", errors);
+  console.log("Promise rejected (validation failed).: ", errors);
 });
