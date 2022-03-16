@@ -32,5 +32,5 @@ validate(post).then((errors) => {
 });
 
 validateOrReject(post).catch((errors) => {
-  console.log("Promise rejected (validation failed).: ", errors);
+  console.log("Promise rejected (validation failed)", errors);
 });
